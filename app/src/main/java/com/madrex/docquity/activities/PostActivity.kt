@@ -2,6 +2,7 @@ package com.madrex.docquity.activities
 
 import android.app.Activity
 import android.os.Bundle
+import android.text.InputType
 import android.view.*
 import android.widget.ArrayAdapter
 import androidx.appcompat.widget.SearchView
@@ -72,6 +73,7 @@ class PostActivity : AppCompatActivity() {
         menuInflater.inflate(R.menu.search, menu)
         val searchItem: MenuItem? = menu?.findItem(R.id.action_search)
         val searchView: SearchView? = searchItem?.actionView as SearchView
+        searchView?.inputType = InputType.TYPE_CLASS_NUMBER
         val searchObserve = Observable
             .create<String> { emitter ->
                 searchView!!.setOnQueryTextListener(object : SearchView.OnQueryTextListener {
