@@ -1,4 +1,4 @@
-package com.madrex.assignment.utils
+package com.madrex.docquity.utils
 
 import android.content.Context
 import android.net.ConnectivityManager

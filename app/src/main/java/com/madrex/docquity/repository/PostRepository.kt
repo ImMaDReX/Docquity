@@ -1,8 +1,8 @@
-package com.madrex.assignment.repository
+package com.madrex.docquity.repository
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
-import com.madrex.assignment.retrofit.PostApi
+import com.madrex.docquity.retrofit.PostApi
 import com.madrex.docquity.models.Post
 import javax.inject.Inject
 

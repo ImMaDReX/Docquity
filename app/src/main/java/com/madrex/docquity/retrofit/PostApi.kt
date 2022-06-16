@@ -1,4 +1,4 @@
-package com.madrex.assignment.retrofit
+package com.madrex.docquity.retrofit
 
 import com.madrex.docquity.models.Post
 import retrofit2.Response

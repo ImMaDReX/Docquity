@@ -1,6 +1,6 @@
-package com.madrex.assignment.di
+package com.madrex.docquity.di
 
-import com.madrex.assignment.retrofit.PostApi
+import com.madrex.docquity.retrofit.PostApi
 import com.madrex.docquity.utils.Constant
 import dagger.Module
 import dagger.Provides
@@ -20,7 +20,7 @@ class RetrofitModule {
     }
     @Singleton
     @Provides
-    fun getPostApi(retrofit: Retrofit):PostApi{
+    fun getPostApi(retrofit: Retrofit): PostApi {
         return retrofit.create(PostApi::class.java)
     }
 }
